@@ -16,6 +16,8 @@ On récupère pour chaque photo :
 
 Au final, seul la date et l'heure seront utilisées. Etant donné le fonctionnement d'Instagram, on suppose que toutes les photos sont postées immédiatement après avoir été prises.
 
+![Fréquences](https://raw.githubusercontent.com/jwheatp/eiffelometre/master/images/plot.png)
+
 ### Forecast.io
 On utilise aussi des données météorologiques depuis l'API http://forecast.io. Dans un souci de simplificté, on se limite à la description du temps (nuages, pluie, soleil etc.) pour chaque heure de chaque jour. Ces données sont obtenues via le script `fetch_weather.py` et sont disponibles dans le fichier `db_weather`.
 
