@@ -28,7 +28,7 @@ bins_5 = np.array([0,0.2,0.4,0.6,0.8,1])
 bins_4 = np.array([0,0.25,0.5,0.75,1])
 bins_3 = np.array([0,0.33,0.66,1])
 
-y = np.digitize(y, bins_3)
+y = np.digitize(y, bins_5)
 
 X = df[["weekday","hour","weather"]].as_matrix()
 
