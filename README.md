@@ -1,6 +1,9 @@
 # Eiffelomètre
 **Prédire le taux de fréquentation de la tour Eiffel avec le réseau social Instagram**
 
+## Introduction
+Les lieux touristiques de Paris sont souvent bondés et il est intéressant de modéliser cette fréquentation afin de savoir à quels moments de la journée, ou de la semaine, il est le plus conseillé de s'y rendre. Ici, on s'intéresse à la tour Eiffel dans un premier temps.
+
 ## Objectif
 L'objectif de ce modèle est de prédire le taux de fréquentation de la tour Eiffel sur une échelle discrète (par exemple de 1 à 5), en se basant sur le nombre de photos prises et postées sur Instagram à cet endroit. On suppose que la proportion de touristes postant des photos sur Instagram est toujours la même et évolue de la même manière que le nombre total de touristes à la tour Eiffel.
 
@@ -35,6 +38,7 @@ On test la précision pour différentes échelles de fréquentations à 3, 4 et 
 | 1 à 5  | 74.9%  |
 
 ## Travaux futurs
-Cette expérience montre qu'il est relativement simple d'établir un modèle avec une précision correcte pour répondre à la problématique soulevée dans l'introduction.
-
-// in progress
+Cette expérience montre qu'il est relativement simple d'établir un modèle avec une précision correcte pour répondre à la problématique soulevée dans l'introduction. Deux pistes seraient à suivre dans le futur : 
+* améliorer le modèle existant en exploitant plus de paramètres (prendre en compte le mois, les périodes de vacances, tester le degré d'influence des différents paramètres etc.)
+* étendre à d'autres lieux touristiques parisiens. Il est par exemple possible de filtrer les positions géographiques des photos avec des points d'intérêt touristique enregistrés dans la base de données ouverte [OpenStreetMap](http://wiki.openstreetmap.org/wiki/Points_of_interest). Le principal écueil serait peut-être le manque de données (pas assez de photos prises) pour certains lieux dans Paris.
+* utiliser les données d'autres réseaux sociaux, comme par exemple Foursquare ou Twitter.
