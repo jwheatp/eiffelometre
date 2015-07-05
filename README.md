@@ -43,3 +43,11 @@ Cette expérience montre qu'il est relativement simple d'établir un modèle ave
 * améliorer le modèle existant en exploitant plus de paramètres (prendre en compte le mois, les périodes de vacances, tester le degré d'influence des différents paramètres etc.)
 * étendre à d'autres lieux touristiques parisiens. Il est par exemple possible de filtrer les positions géographiques des photos avec des points d'intérêt touristique enregistrés dans la base de données ouverte [OpenStreetMap](http://wiki.openstreetmap.org/wiki/Points_of_interest). Le principal écueil serait peut-être le manque de données (pas assez de photos prises) pour certains lieux dans Paris.
 * utiliser les données d'autres réseaux sociaux, comme par exemple Foursquare ou Twitter.
+
+
+## Dépendances techniques : 
+* requests
+* pandas
+* matplotlib
+* numpy
+* sklearn
