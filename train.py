@@ -16,27 +16,33 @@ for row in df_weather.iterrows() :
 	index, data = row
 	weather.extend(data.tolist())
 
+# insert weather column in dataframe
 df["weather"] = weather
 
+# create two variables X (model input) and y (model output) for the model
+X = df[["weekday","hour","weather"]].as_matrix()
+ 
 y = df[["count"]].as_matrix()
 y = np.ravel(y)
 y = y.astype(float)
 
+# normalize y between 0 and 1 (strictly)
 y = (y-min(y))/(max(y)+1-min(y))
 
+# create bins for a discrete frequentation scale
 bins_5 = np.array([0,0.2,0.4,0.6,0.8,1])
 bins_4 = np.array([0,0.25,0.5,0.75,1])
 bins_3 = np.array([0,0.33,0.66,1])
 
+# here we use bins_5
 y = np.digitize(y, bins_5)
-
-X = df[["weekday","hour","weather"]].as_matrix()
-
 
 n = len(y)
 
+# SVM/SVC model
 clf = SVC()
 
+# use 5-fold cross-validation to test the model accuracy
 kf = KFold(n, n_folds=5, shuffle=True)
 scores = []
 for train, test in kf:
@@ -50,4 +56,5 @@ for train, test in kf:
 
 	scores.append(clf.score(X_test,y_test))
 
+# print main accuracy
 print(np.mean(scores))

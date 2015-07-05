@@ -1,3 +1,4 @@
+# preprocess
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
@@ -13,13 +14,14 @@ df = df.ix[:,"timestamp"]
 # convert dates to pandas dates
 dates = pd.DatetimeIndex(pd.to_datetime(df, unit='s', utc=True)).tz_localize('UTC').tz_convert('Europe/Paris')
 
-#sort
+# sort
 dates = dates.order()
 
 # create count dataframe and sample by hour
 dates = pd.DataFrame([1]*len(dates), index=dates)
 dates = dates.resample('1h', how='sum')
 
+# out db name
 out_db = "db_june_dayhourcount"
 f = open(out_db,"w")
 for d in dates.iterrows() :
