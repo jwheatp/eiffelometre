@@ -23,4 +23,18 @@ On décide de réaliser un modèle simple en prenant en compte trois paramètres
 * l'heure du jour (par exemple "22h")
 * la description météorologique (par exemple "ensoleillé")
 
-Le modèle est entrainé et testé sur les données du mois de juin. On utilise la méthode [*machine à vecteurs de support*](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC) implémentée dans la librairie sk-learn.
+Le modèle est entrainé et testé sur les données du mois de juin. On utilise la méthode [*machine à vecteurs de support*](http://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC) implémentée dans la librairie sk-learn. Le code est disponible dans le script `train.py`.
+
+### Précision
+On test la précision pour différentes échelles de fréquentations à 3, 4 et 5 graduations. Les résultats de précisions sont disponible dans le tableau-ci-dessous.
+
+| Echelle | Précision |
+| ------------- | ------------- |
+| 1 à 3  | 84.7%  |
+| 1 à 4  | 79.6%  |
+| 1 à 5  | 74.9%  |
+
+## Travaux futurs
+Cette expérience montre qu'il est relativement simple d'établir un modèle avec une précision correcte pour répondre à la problématique soulevée dans l'introduction.
+
+// in progress
