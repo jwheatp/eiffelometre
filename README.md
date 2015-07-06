@@ -1,7 +1,7 @@
 # Eiffelomètre
 **Prédire le taux de fréquentation de la tour Eiffel avec le réseau social Instagram**
 
-Les lieux touristiques de Paris sont souvent bondés et il est utile de modéliser cette fréquentation afin de savoir à quels moments de la journée, de la semaine, voire de l'année, il est le plus conseillé de s'y rendre. De plus, un tel modèle permettrait de connaître les différents facteurs de fréquentation, leurs dépendances et leurs évolutions.
+Les lieux touristiques de Paris sont souvent bondés et il serait utile de modéliser cette fréquentation afin de savoir à quels moments de la journée, de la semaine, voire de l'année, il est le plus conseillé de s'y rendre. De plus, un tel modèle permettrait de connaître les différents facteurs de fréquentation, leurs dépendances et leurs évolutions.
 Ici, on s'intéresse dans un premier temps à la tour Eiffel comme un cas d'étude.
 
 ## Objectif
